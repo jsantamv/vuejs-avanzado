@@ -26,6 +26,8 @@ function aplicarfiltros() {
     })
 }
 
+/*probando*/
+
 function contador() {
     let app = new Vue({
         el: '#app',
