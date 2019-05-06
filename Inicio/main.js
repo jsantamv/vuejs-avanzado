@@ -6,7 +6,7 @@ function aplicarfiltros() {
             titulo: 'yo manejando',
             subtituslos: 'estas viendo el cursp de vue',
             nombre: '',
-            cursosSelecionados: [],
+            cursosSeleccionados: [],
             cursos: [
                 {
                     nombre: 'Curso de Vue.js',
@@ -38,7 +38,7 @@ function aplicarfiltros() {
         methods: {
             submit: function () {
                 console.log('Ejecuta el metodo submit')
-                console.log(this.cursosSelecionados)
+                console.log(this.cursosSeleccionados)
             }
         }
     })
