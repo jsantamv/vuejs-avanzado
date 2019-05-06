@@ -6,7 +6,25 @@ function aplicarfiltros() {
             titulo: 'yo manejando',
             subtituslos: 'estas viendo el cursp de vue',
             nombre: '',
-            cursos: []
+            cursosSelecionados: [],
+            cursos: [
+                {
+                    nombre: 'Curso de Vue.js',
+                    value: 'vue'
+                },
+                {
+                    nombre: 'Curso de seo',
+                    value: 'seo'
+                },
+                {
+                    nombre: 'Curso de react',
+                    value: 'react'
+                },
+                {
+                    nombre: 'Curso de growth',
+                    value: 'growth'
+                },
+            ]
         },
         filters: {
             uppercase: str => str.toUpperCase(),
@@ -17,10 +35,10 @@ function aplicarfiltros() {
             }
 
         },
-        methods:{
+        methods: {
             submit: function () {
                 console.log('Ejecuta el metodo submit')
-                console.log(this.cursos)
+                console.log(this.cursosSelecionados)
             }
         }
     })

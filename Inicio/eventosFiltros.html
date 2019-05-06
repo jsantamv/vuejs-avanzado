@@ -16,23 +16,17 @@
 
         <form @submit.prevent="submit" action="" method="GET">
             <h2>Cuales son tus cursos favoritos</h2>
-            <input v-model="cursos" type="checkbox" id="vue" value="vue">
-            <label for="vue">Curso de Vue.js</label>
+            <template v-for="curso in cursos">
 
-            <input v-model="cursos" type="checkbox" id="seo" value="seo">
-            <label for="seo">Curso de seo</label>
+                <input v-model="cursosSelecionados" type="checkbox" v-bind:id="curso.value" v-bind:value="curso.value">
 
-            <input v-model="cursos" type="checkbox" id="react" value="react">
-            <label for="react">Curso de react</label>
+                <label v-bind:for="curso.value">{{curso.nombre}}</label>
 
-            <input v-model="cursos" type="checkbox" id="growth" value="growth">
-            <label for="growth">Curso de growth</label>
+            </template>
 
-            <br>
-            <br>
             <button type="submit">Enviar</button>
         </form>
-    
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="main.js"></script>
