@@ -1,63 +1,46 @@
-/* Funcion para aplicar filtros */
-function aplicarfiltros() {
+/**
+ * Funcion con componentes
+ */
+
+function aplicarComponentes() {
+    Vue.component('curso', {
+        props: ['curso'],
+        methods: {
+            onchange: function (ev) {
+                this.$emit('checked', this.curso.value, ev.target.checked)
+            }
+        },
+        template: `
+          <div>
+            <input type="checkbox" v-bind:id="curso.value" v-bind:value="curso.value" @change="onchange">
+            <label v-bind:for="curso.value">{{ curso.nombre }}</label>
+          </div>
+        `
+    })
+
     let app = new Vue({
         el: '#app',
         data: {
-            titulo: 'yo manejando',
-            subtituslos: 'estas viendo el cursp de vue',
-            nombre: '',
-            cursosSelecionados: [],
             cursos: [
-                {
-                    nombre: 'Curso de Vue.js',
-                    value: 'vue'
-                },
-                {
-                    nombre: 'Curso de seo',
-                    value: 'seo'
-                },
-                {
-                    nombre: 'Curso de react',
-                    value: 'react'
-                },
-                {
-                    nombre: 'Curso de growth',
-                    value: 'growth'
-                },
-            ]
-        },
-        filters: {
-            uppercase: str => str.toUpperCase(),
-            lowercase: str => str.toLowerCase(),
-            capitalize: function (str) {
-                if (typeof str !== 'string') return ''
-                return str.charAt(0).toUpperCase() + str.slice(1)
-            }
-
+                { nombre: 'Curso de Introducción a Vue.js', value: 'vue' },
+                { nombre: 'Curso de SEO', value: 'seo' },
+                { nombre: 'Curso React y Redux', value: 'react' },
+                { nombre: 'Curso de Growth Marketing', value: 'growth' }
+            ],
+            cursosSeleccionados: []
         },
         methods: {
             submit: function () {
-                console.log('Ejecuta el metodo submit')
-                console.log(this.cursosSelecionados)
-            }
-        }
-    })
-}
-
-/*probando*/
-
-function contador() {
-    let app = new Vue({
-        el: '#app',
-        data: {
-            contador: 0
-        },
-        methods: {
-            sumar: function () {
-                this.contador++
+                console.log('Se ejecuta el método submit')
+                console.log(this.cursosSeleccionados)
             },
-            restar: function () {
-                this.contador--
+            selectCurso: function (curso, checked) {
+                if (checked) {
+                    this.cursosSeleccionados.push(curso)
+                } else {
+                    let index = this.cursosSeleccionados.indexOf(curso)
+                    this.cursosSeleccionados.splice(index, 1)
+                }
             }
         }
     })
