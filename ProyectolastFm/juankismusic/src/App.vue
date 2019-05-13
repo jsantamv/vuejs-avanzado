@@ -3,7 +3,9 @@
   img(src='./assets/logo.png')
   h1 JUANKISMUSIC
   ul
-    li "aro aro ar"
+    li (v-for="artist in artists"){{
+      artist.name    }}
+
 </template>
 
 <script>
@@ -16,7 +18,6 @@ export default {
         { name: 'daft punk' },
         { name: 'Red Hot Chill Peppers' },
         { name: 'AC DC' }
-
       ]
     }
   }
