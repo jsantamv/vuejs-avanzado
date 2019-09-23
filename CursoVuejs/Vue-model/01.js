@@ -22,7 +22,8 @@ const app = new Vue({
                 anio: 30
             }
         ],
-        nuevaPersona: ""
+        nuevaPersona: "",
+        total: 0
 
     },
     methods: {
@@ -33,7 +34,14 @@ const app = new Vue({
             })
             this.nuevaPersona = ""
         }
-
-
+    },
+    computed: {
+        sumarPersona() {
+            this.total = 0;
+            for (persona of this.objetos) {
+                this.total = this.total + persona.anio
+            }
+            return this.total
+        }
     }
 })
