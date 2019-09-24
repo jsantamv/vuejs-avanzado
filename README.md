@@ -1,27 +1,12 @@
-QuickMarks
-QuickMarks is an analytics app for web projects. It helps you track events on your websites. It is built using Rails, Devise, and a few charting libraries.
+CursoVueJS
 
-Quickmarks analytics offers a few key features:
-
-A client-side JavaScript snippet that allows a user to track events on their website
-A server-side API that captures and saves those events to a database
-A Rails application that displays the captured event data for a user
-Installation
-Here's how you track your website with Quickmarks:
-
-TODO: ADD INFO
+Todo el código que aparece aqui, es para usu personal para cuestiones de entendimiento y programacion en javascript utilizando VUEJS. 
 
 Usage
-TODO: Write usage instructions
+TODO: Contenido autodidacta
 
 Contributing
 Fork it!
-Create your feature branch: git checkout -b my-new-feature
-Commit your changes: git commit -am 'Add some feature'
-Push to the branch: git push origin my-new-feature
-Submit a pull request :D
-History
-Version 0.1 (2019-05-06) - adding Devise and core Rails functionality
 
 Credits
 Lead Developer - juan carlos santamaria @jsantamv
