@@ -1,6 +1,13 @@
 CursoVueJS
 
-Todo el código que aparece aqui, es para usu personal para cuestiones de entendimiento y programacion en javascript utilizando VUEJS. 
+Todo el código que aparece aqui, es para usu personal para cuestiones de entendimiento y programacion en javascript utilizando VUEJS.
+
+COMPLEMENTOS UTILIZADOS
+
+- Live server
+- beautify
+- Vue
+- es6-string-html: para dar formato html cuando es string.
 
 Usage
 TODO: Contenido autodidacta
