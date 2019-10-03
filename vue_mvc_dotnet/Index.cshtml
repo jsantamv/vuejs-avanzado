@@ -1,0 +1,119 @@
+﻿
+@{
+    ViewBag.Title = "Mantenimiento de Rol";
+}
+
+<link href="~/Scripts/DataTables/datatables.min.css" rel="stylesheet" />
+
+<!-- animation css -->
+<link rel="stylesheet" href="~/assets/plugins/animation/css/animate.min.css">
+<!-- notification css -->
+<link rel="stylesheet" href="~/assets/plugins/notification/css/notification.min.css">
+
+
+<script src="~/Scripts/vue/vue.js"></script>
+
+<div class="row">
+    <div id="appMantRol" class="container">
+        <div class="pcoded-main-container">
+            <div class="pcoded-wrapper">
+                <div class="pcoded-content col-md-12">
+                    <div class="pcoded-inner-content">
+                        <!-- [ form-element ] start -->
+                        <div class="col-sm-12">
+                            <div class="card">
+
+                                <div class="card-header">
+                                    <h5>Mantenimiento de Roles</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-8">
+
+                                        </div>
+                                        <div class="col-md-2">
+                                            <button class="btn btn-secondary" @@click="nuevo">Nuevo</button>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <button class="btn btn-primary" @@click="guardar">Guardar</button>
+                                        </div>
+                                    </div>
+
+                                    <!--[ FORMULARIO ]-->
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="nombreRol">Nombre Rol</label>
+                                                    <input type="text" class="form-control" v-model="Rol.Rol_nombre" placeholder="Ingrese Nombre Rol">
+                                                </div>
+                                                <div class="form-group form-check">
+                                                    <input @@click="checked" id="chkDato" type="checkbox" :value="Rol.Rol_estado" v-if="Rol.Rol_estado === 'A'" checked>
+                                                    <input @@click="checked" id="chkDato" type="checkbox" :value="Rol.Rol_estado" v-else>
+
+                                                    <label class="form-check-label" for="chkRolEstado" v-if="Rol.Rol_estado === 'A'">Estado: Activo</label>
+                                                    <label class="form-check-label" for="chkRolEstado" v-else>Estado: Inactivo</label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!--[ FIN FORMULARIO ]-->
+                                    <hr />
+                                    <!--[ elementos de la tabla ]-->
+                                    <div class="card">
+                                        <div class="table-responsive">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <table class="table table-bordered table-hover " id="tablaReporteUsuario">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Id Rol</th>
+                                                                <th>Nombre</th>
+                                                                <th>Estado</th>
+                                                                <th>Fecha Creación</th>
+                                                                <th>Usuario Creación</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody id="datosTabla">
+                                                            <tr v-for="rol in listaRoles" v-on:dblclick="editar(rol)">
+                                                                <td v-text="rol.Rol_codigo"></td>
+                                                                <td v-text="rol.Rol_nombre"></td>
+                                                                <td>
+                                                                    <input type="checkbox" :value="rol.Rol_estado" v-if="rol.Rol_estado === 'A'" checked onclick="return false">
+                                                                    <input type="checkbox" :value="rol.Rol_estado" v-else onclick="return false">
+                                                                </td>
+                                                                <td v-text="rol.Rol_fechareg"></td>
+                                                                <td v-text="rol.Rol_usuarioreg"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <ul class="pagination pagination-lg pager" id="myPager"></ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--[ FIN elementos de la tabla ]-->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/utils/utils.js"></script>
+<script src="~/assets/plugins/sweetalert/js/sweetalert.min.js"></script>
+<script src="~/assets/plugins/jquery/js/jquery.min.js"></script>
+<!-- Required Js -->
+<script type="text/javascript" src="~/assets/js/vendor-all.min.js"></script>
+<script type="text/javascript" src="~/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="~/assets/js/pcoded.min.js"></script>
+
+<script type="text/javascript" src="~/Scripts/DataTables/datatables.min.js"></script>
+
+<script src="~/Scripts/MantRol/mantRol.js"></script>
