@@ -49,6 +49,15 @@ new Vue({
 
             return result // JavaScript object
         },
+        sendData: async function(result){
+            const response = await fetch("metodoController",{
+                headers: { "accept": "application/json", "content-type": "application/json" },
+                method: "POST",
+                body: JSON.stringify({
+                    rol: this.Rol
+                })
+            })
+        },
         loadCSV(e) {
             var vm = this
             if (window.FileReader) {
