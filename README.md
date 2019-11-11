@@ -1,6 +1,6 @@
 CursoVueJS
 
-Todo el código que aparece aqui, es para usu personal para cuestiones de entendimiento y programacion en javascript utilizando VUEJS.
+Todo el código que aparece aqui, es para uso personal para cuestiones de entendimiento y programacion en javascript utilizando VUEJS.
 
 COMPLEMENTOS UTILIZADOS
 
