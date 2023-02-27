@@ -1,14 +1,18 @@
 <script setup lang="ts">
-import { ref } from 'vue';
-const counter = ref(0)
+import { RouterView } from 'vue-router';
+
 
 </script>
 
 <template>
   <div class="wrapper">
-    <h1>Hola</h1>
-    <p>Contador: {{ counter }}</p>
-    <button @click="counter++">+1</button>
+    <header>
+    </header>
+      <!-- NavBar -->
+    <main>
+      <RouterView/>
+    </main>
+
   </div>
 </template>
 
