@@ -24,7 +24,7 @@ import { routeLinks } from './router/link-routes';
 
 <style  lang="scss" scoped>
 
-$background-color: #212632;
+$background-color: #2D3139;
 $font-color: #FFFFFF;
 $header-navbar-color: #0A101F;
 
