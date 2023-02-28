@@ -11,7 +11,7 @@ import { routeLinks } from './router/link-routes';
   <div class="main-layout">
     <div class="wrapper">
       <header>
-        <NavBar title="BreakingBad" :links="routeLinks" />
+        <NavBar title="Sports" :links="routeLinks" />
       </header>
 
       <main>
