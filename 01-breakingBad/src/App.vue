@@ -8,26 +8,30 @@ import { routeLinks } from './router/link-routes';
 
 
 <template>
-  <div class="wrapper">
-    <header>
-      <NavBar 
-        title="BreakingBad"
-        :links="routeLinks"
-      />
-    </header>
+  <div class="main-layout">
+    <div class="wrapper">
+      <header>
+        <NavBar title="BreakingBad" :links="routeLinks" />
+      </header>
 
-    <main>
-      <RouterView />
-    </main>
+      <main>
+        <RouterView />
+      </main>
 
+    </div>
   </div>
 </template>
 
-<style scoped>
+<style  lang="scss" scoped>
+
+$background-color: #212632;
+
+.main-layout{
+  background: $background-color;
+}
 
 .wrapper {
   display: flex;
   flex-direction: column;
 }
-
 </style>
