@@ -13,16 +13,16 @@ const router = createRouter({
         { path: '/about', name: 'about', component: AboutPage },
         
         // Characters
-        {
-            ...characterRoute,
-            path: '/characters'
-        },
-        // characterRoutsse,
-        // { 
-        //     path: '/characters', 
-        //     name: 'characters', 
-        //     component: () => import('@/characters/layout/CharacterLayout.vue') 
+        // {
+        //     ...characterRoute,
+        //     path: '/characters'
         // },
+        // characterRouts
+        { 
+            path: '/characters', 
+            name: 'characters', 
+            component: () => import('@/characters/layout/CharacterLayout.vue') 
+        },
 
         // Default
         { path: '/:pathMatch(.*)*', redirect: () => ({ name: 'home' }) }
