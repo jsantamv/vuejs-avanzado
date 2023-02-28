@@ -1,0 +1,246 @@
+@font-face {
+  font-family: 'Abi-mod-icons';
+  src:  url('fonts/Abi-mod-icons.eot?vqb0p4');
+  src:  url('fonts/Abi-mod-icons.eot?vqb0p4#iefix') format('embedded-opentype'),
+    url('fonts/Abi-mod-icons.ttf?vqb0p4') format('truetype'),
+    url('fonts/Abi-mod-icons.woff?vqb0p4') format('woff'),
+    url('fonts/Abi-mod-icons.svg?vqb0p4#Abi-mod-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Abi-mod-icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.star-empty:before {
+  content: "\e946";
+}
+.star-full:before {
+  content: "\e947";
+}
+.chevron-down1:before {
+  content: "\e949";
+}
+.chevron-left1:before {
+  content: "\e94b";
+}
+.close-circle:before {
+  content: "\e952";
+}
+.check_full:before {
+  content: "\e953";
+}
+.alert:before {
+  content: "\e945";
+}
+.check:before {
+  content: "\e900";
+}
+.betslip:before {
+  content: "\e901";
+}
+.cashier:before {
+  content: "\e902";
+}
+.casino1:before {
+  content: "\e903";
+}
+.casino2:before {
+  content: "\e904";
+}
+.clock:before {
+  content: "\e909";
+}
+.digital_casino:before {
+  content: "\e90a";
+}
+.home:before {
+  content: "\e90b";
+}
+.horses_outline:before {
+  content: "\e90c";
+}
+.live_betting:before {
+  content: "\e90d";
+}
+.message:before {
+  content: "\e90e";
+}
+.openbets:before {
+  content: "\e90f";
+}
+.propbuilder:before {
+  content: "\e910";
+}
+.props:before {
+  content: "\e911";
+}
+.reports:before {
+  content: "\e912";
+}
+.rules-1:before {
+  content: "\e913";
+}
+.rules:before {
+  content: "\e914";
+}
+.settings:before {
+  content: "\e915";
+}
+.share:before {
+  content: "\e916";
+}
+.sport:before {
+  content: "\e917";
+}
+.support:before {
+  content: "\e919";
+}
+.user:before {
+  content: "\e91a";
+}
+.virtuals1:before {
+  content: "\e91b";
+}
+.balance:before {
+  content: "\e91c";
+}
+.baseball_field:before {
+  content: "\e91d";
+}
+.baseball:before {
+  content: "\e91e";
+}
+.basketball_net:before {
+  content: "\e91f";
+}
+.basketball:before {
+  content: "\e920";
+}
+.betlines_filled:before {
+  content: "\e921";
+}
+.boxing_bell:before {
+  content: "\e922";
+}
+.boxing:before {
+  content: "\e923";
+}
+.colortheme:before {
+  content: "\e924";
+}
+.criket:before {
+  content: "\e925";
+}
+.current:before {
+  content: "\e926";
+}
+.darts:before {
+  content: "\e927";
+}
+.deposit:before {
+  content: "\e928";
+}
+.drag:before {
+  content: "\e929";
+}
+.fontsize:before {
+  content: "\e92a";
+}
+.football_ball:before {
+  content: "\e92b";
+}
+.football_helmet:before {
+  content: "\e92c";
+}
+.formula1:before {
+  content: "\e92d";
+}
+.free-play:before {
+  content: "\e92e";
+}
+.golf:before {
+  content: "\e92f";
+}
+.hockey:before {
+  content: "\e930";
+}
+.horses:before {
+  content: "\e931";
+}
+.inbox:before {
+  content: "\e932";
+}
+.lacrosse:before {
+  content: "\e933";
+}
+.language:before {
+  content: "\e934";
+}
+.livestreaming:before {
+  content: "\e935";
+}
+.lock:before {
+  content: "\e936";
+}
+.lottery:before {
+  content: "\e937";
+}
+.mma:before {
+  content: "\e938";
+}
+.nascar:before {
+  content: "\e939";
+}
+.other:before {
+  content: "\e93a";
+}
+.pending:before {
+  content: "\e93b";
+}
+.politics:before {
+  content: "\e93c";
+}
+.rugby:before {
+  content: "\e93d";
+}
+.soccer:before {
+  content: "\e93e";
+}
+.specials:before {
+  content: "\e93f";
+}
+.star_full:before {
+  content: "\e940";
+}
+.tennis:before {
+  content: "\e941";
+}
+.trash:before {
+  content: "\e942";
+}
+.virtuals:before {
+  content: "\e943";
+}
+.voleyball:before {
+  content: "\e944";
+}
+.burger:before {
+  content: "\e94d";
+}
+.close:before {
+  content: "\e950";
+}

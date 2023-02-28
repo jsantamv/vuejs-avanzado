@@ -20,12 +20,12 @@ const props = withDefaults(defineProps<Props>(), {
         <span v-if="props.title">{{ props.title }}</span>
 
 
-        <RouterLink 
+        <RouterLink
             v-for="link of props.links"
             :key="link.path"
             :to="link.path"
         >
-            {{ link.title }}
+           <i class="soccer">{{ link.title }}</i> 
         </RouterLink>
 
 <!-- 
@@ -36,6 +36,9 @@ const props = withDefaults(defineProps<Props>(), {
 
 
 <style scoped>
+
+@import "../../assets/abi-fonts.scss";
+
 nav {
     align-items: flex-start;
     display: flex;
