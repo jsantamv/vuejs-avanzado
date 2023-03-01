@@ -13,11 +13,11 @@ const router = createRouter({
         { path: '/about', name: 'about', component: AboutPage },
         
         // Characters
-        // {
-        //     ...characterRoute,
-        //     path: '/characters'
-        // },
-        // characterRouts
+        {
+            ...characterRoute,
+            path: '/characters'
+        },
+        //characterRoute,
         { 
             path: '/characters', 
             name: 'characters', 

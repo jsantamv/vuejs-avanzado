@@ -2,13 +2,13 @@ import type { RouteRecordRaw } from 'vue-router';
 
 import CharacterLayout from '@/characters/layout/CharacterLayout.vue';
 import CharacterId from '@/characters/pages/CharacterId.vue';
-// import CharacterList from '../pages/CharacterList.vue';
-// import CharacterSearch from '../pages/CharacterSearch.vue';
+import CharacterList from '@/characters/pages/CharaterList.vue';
+import CharacterSearch from '@/characters/pages/CharacterSearch.vue';
 
 
 export const characterRoute: RouteRecordRaw = {
     path: '/characters',
-    redirect: '/characters/list',
+    redirect: '/characters/list', //esto para defenir la ruta por default
     component: CharacterLayout,
     children: [
         { 
@@ -17,18 +17,18 @@ export const characterRoute: RouteRecordRaw = {
             props: { title: 'Por Id', visible: false, },
             component: CharacterId,
         },
-        // { 
-        //     path: 'list',
-        //     name: 'character-list', 
-        //     props: { title: 'Lista', visible: true, },
-        //     component: CharacterList,
-        // },
-        // { 
-        //     path: 'search',
-        //     name: 'character-search', 
-        //     props: { title: 'Búsqueda', visible: true, },
-        //     component: CharacterSearch,
-        // },
+        { 
+            path: 'list',
+            name: 'character-list', 
+            props: { title: 'Lista', visible: true, },
+            component: CharacterList,
+        },
+        { 
+            path: 'search',
+            name: 'character-search', 
+            props: { title: 'Búsqueda', visible: true, },
+            component: CharacterSearch,
+        },
     ]
 }
 

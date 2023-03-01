@@ -18,9 +18,13 @@ const props = withDefaults(defineProps<Props>(), {
     <img v-if="props.showIcon" src="@/assets/logo.svg" alt="Vue Logo" height="25" width="25" />
     <span v-if="props.title">{{ props.title }}</span>
 
-    <RouterLink v-for="link of props.links" :key="link.path" :to="link.path">
-      <a href=""><i class="soccer">{{ link.title }}</i></a>
-      
+    <RouterLink 
+      v-for="link of props.links" 
+      :key="link.path" 
+      :to="link.path">
+      <a href="">
+        <i class="soccer">{{ link.title }}</i>
+      </a>
     </RouterLink>
 
     <!-- 
