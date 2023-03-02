@@ -25,7 +25,6 @@ a,
   body {
     display: flex;
     place-items: center;
-    
   }
 
   #app {
@@ -38,8 +37,23 @@ a,
 .router-link-active {
   color: grey !important;
   text-decoration: underline;
+
+  a {
+    color: grey !important;
+    text-decoration: underline;
+  }
 }
 
-.router-link-exact-active{
-  text-decoration: none !important;
+.router-link-exact-active {
+  color: grey !important;
+  text-decoration: underline;
+
+  a {
+    color: rgb(255, 255, 255) !important;
+    text-decoration: none;
+    border: 1px solid rgb(17, 153, 74);
+    background-color: rgb(7, 179, 78);
+    border-radius: 5px;
+    padding: 10px;
+  }
 }
