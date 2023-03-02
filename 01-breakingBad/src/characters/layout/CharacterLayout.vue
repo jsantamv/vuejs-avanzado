@@ -6,8 +6,8 @@ import NavBar from '../../shared/components/NavBar.vue';
 import { characterRoute } from '../router';
 
 const routeLinks: RouterLink[] = characterRoute.children!
-    .filter( route => (route.props as { visible: boolean }).visible )
-    .map( route => {
+    .filter(route => (route.props as { visible: boolean }).visible)
+    .map(route => {
         return {
             name: route.name as string,
             path: route.path,
@@ -21,17 +21,13 @@ const routeLinks: RouterLink[] = characterRoute.children!
     <h1>Personajes</h1>
 
     <!-- Navbar -->
-    <NavBar 
-        :show-icon="false"
-        :links="routeLinks"
-    />
+    <NavBar :show-icon="false" :links="routeLinks" />
 
-    <!-- RouterView + Suspense -->
+    <!-- RouterView + Suspense (caracteristica experimental) -->
+    <!-- <Suspense> -->
     <RouterView />
-
+    <!-- </Suspense> -->
 </template>
 
 
-<style scoped>
-
-</style>
+<style scoped></style>
