@@ -8,7 +8,7 @@ import CharacterSearch from '@/characters/pages/CharacterSearch.vue';
 
 export const characterRoute: RouteRecordRaw = {
     path: '/characters',
-    redirect: '/characters/list', //esto para defenir la ruta por default
+    redirect: '/characters/list',
     component: CharacterLayout,
     children: [
         { 
@@ -20,7 +20,7 @@ export const characterRoute: RouteRecordRaw = {
         { 
             path: 'list',
             name: 'character-list', 
-            props: { title: 'Lista', visible: true, },
+            props: { title: 'Lista Completa', visible: true, },
             component: CharacterList,
         },
         { 
