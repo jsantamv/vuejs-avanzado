@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import useCharaters from "@/characters/composables/useCharaters";
-
-const { characters, isLoading } = useCharaters();
-console.log(isLoading);
+const { characters, isLoading, hasError, errorMessage } = useCharaters();
 
 </script>
 
@@ -14,7 +12,8 @@ console.log(isLoading);
     </li>
   </ul>
 
-  <h5>Error...</h5>
+  <h5 v-if="hasError">Error: {{ errorMessage }}</h5>
+
 </template>
 
 <style scoped></style>
