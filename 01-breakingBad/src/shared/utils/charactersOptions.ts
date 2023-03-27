@@ -11,7 +11,7 @@ const getCharactersSlow = async (): Promise<Character> => {
         setTimeout(async () => {
             const { data } = await rickAndMortyApi.get<Character>('/character')
             resolve(data)
-        }, 1);
+        }, 3000);
     })
 
 
