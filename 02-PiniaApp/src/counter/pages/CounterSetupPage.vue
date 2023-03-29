@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { storeToRefs } from "pinia";
-import { useCounterOptionsStore } from "../../store/counter-options";
 import CounterOptionsValue from "../components/CounterOptionsValue.vue";
+import { useCounterSetupStore } from '../../store/counter-setup';
 
-const counterStore = useCounterOptionsStore();
+const counterStore = useCounterSetupStore();
 const { count, squareCount } = storeToRefs(counterStore);
 
 

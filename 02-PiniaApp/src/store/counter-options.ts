@@ -12,7 +12,7 @@ export const useCounterOptionsStore = defineStore('counterOptions', {
     } as CounterOptionsState),
 
     getters: {
-        squereCount: (state) => Math.pow(state.count, 2)
+        squareCount: (state) => Math.pow(state.count, 2)
     },
 
     actions: {
